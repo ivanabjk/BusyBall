@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C40FF223-C36D-4080-B2EE-A920ADB916BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VP_Proekt</RootNamespace>
+    <AssemblyName>VP_Proekt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarRacing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarRacing.Designer.cs">
+      <DependentUpon>CarRacing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MathOperations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathOperations.Designer.cs">
+      <DependentUpon>MathOperations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nonogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nonogram.Designer.cs">
+      <DependentUpon>Nonogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle.Designer.cs">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quiz.Designer.cs">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solution.cs" />
+    <EmbeddedResource Include="CarRacing.resx">
+      <DependentUpon>CarRacing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathOperations.resx">
+      <DependentUpon>MathOperations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nonogram.resx">
+      <DependentUpon>Nonogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Puzzle.resx">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Home Interior background for video conferencing l Vector Background Animation Free.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmClock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_alarm-clock-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_alarm-clock-png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alaaaarmclock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_alarm-clock-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmClock1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlarmClock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blurry backgroundVP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_list-icon-files-and-folders-icon-clipboard-icon-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_car-formula-1-scuderia-ferrari-ferrari-f2012-ferrari-s-p-a-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_red-bull-racing-car-formula-1-scuderia-ferrari-bahrain-grand-prix-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picTrack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a217ba9897bf400019e1d3d_TMR011 Road Track.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_trophy-medal-cup-png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_trophy-medal-cup-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_trophy-medal-prize-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_explosion-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_car-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_explosion-png %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-white-vertical-line-31631830623zrii3qevl7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picTrack123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picTrack12333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picTrack2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picTrack1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-portable-network-graphics-bronze-medal-clip-art-5ca8bb7a6b34e7.1402266015545619144391.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a1cada15fe4f4.5746706215118288973928.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a1cadad08c5b5.8891985715118289090359.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-car-mercedes-benz-computer-icons-white-modern-car-top-view-5ab18d1eca03f1.3753105215215854388275.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-car-a-classic-car-top-design-5aa11823a9aa89.778084321520506915695.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a29651f4ce777.541770901512662303315.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a2c2e956b8bf1.9401776315128449494405.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a2c2f393fc6d1.7493330715128451132612.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-bugatti-chiron-bugatti-veyron-koenigsegg-agera-r-c-bugatti-top-view-5a71e7ef975a24.54748771151741438362.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-vector-motors-corporation-vector-w2-vec-5b16c1805ade98.8010588315282179843722.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-violet-purple-top-view-5abaea22821429.7589504915221990745328.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-honda-nsx-audi-r8-car-top-view-5a74c03ebc8ae6.9112360215176008307723.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog-puppy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\273640841_501862357963063_3972573736074261729_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-car-a-classic-car-top-design-5aa11823a9aa89.7780843215205069156951.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a2c2f393fc6d1.74933307151284511326121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-vector-motors-corporation-vector-w2-vec-5b16c1805ade98.80105883152821798437221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-bugatti-chiron-bugatti-veyron-koenigsegg-agera-r-c-bugatti-top-view-5a71e7ef975a24.547487711517414383621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-car-mercedes-benz-computer-icons-white-modern-car-top-view-5ab18d1eca03f1.37531052152158543882751.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-honda-nsx-audi-r8-car-top-view-5a74c03ebc8ae6.91123602151760083077231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_explosion-png %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-car-a-classic-car-top-design-5aa11823a9aa89.77808432152050691569511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5a2c2f393fc6d1.749333071512845113261211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-vector-motors-corporation-vector-w2-vec-5b16c1805ade98.801058831528217984372211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-bugatti-chiron-bugatti-veyron-koenigsegg-agera-r-c-bugatti-top-view-5a71e7ef975a24.5474877115174143836211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-car-mercedes-benz-computer-icons-white-modern-car-top-view-5ab18d1eca03f1.375310521521585438827511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sports-car-honda-nsx-audi-r8-car-top-view-5a74c03ebc8ae6.911236021517600830772311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\255937332_632183218147056_4902467804425389120_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\348379566_965549368228588_8182551424995383390_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\348362211_550694917260742_7787981510360860012_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\348383437_209328878640837_1981447724256497382_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\348387278_784052056508282_5153524605633866061_n.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
