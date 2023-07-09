@@ -112,6 +112,10 @@ public void ShowQuestions()
 
 ![App Screenshot](https://snipboard.io/IwNn7d.jpg)
 
+## Windows Forms Project by:
+
+- [@ivanabjk](https://www.github.com/ivanabjk)
+- [@hristinastojanovska](https://www.github.com/hristinastojanovska)
 
 
 
